@@ -5,7 +5,7 @@
 //  Created by Julie Kim on 12/12/17.
 //  Copyright © 2017 julie kim. All rights reserved.
 //
-
+//DRY: Don't Repeat Yourself
 import UIKit
 
 class ViewController: UIViewController {
@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //anything in this gets triggered when the screen gets loaded
+        updateDiceImages()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +31,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-        
+        updateDiceImages()
+    }
+    
+    func updateDiceImages(){
         randomDiceIndex1 = Int(arc4random_uniform(6))
         //random number generator between 0-5
         //both sides are now equal to integers which makes x-code happy
@@ -40,7 +45,6 @@ class ViewController: UIViewController {
         diceImageView2.image = UIImage(named : diceArray[randomDiceIndex2])
         
     }
-    
 
 }
 
