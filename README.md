@@ -8,7 +8,7 @@ This git-Repo is for documenting my learning process of Swift through the Udemy 
 - The second project was aptly named **"Dicee"**
   * This one now combined functions, storyboard, and using the object library
   * It also introduced the motion method, so if shaken it would trigger an action.
-	* I made sure to apply the use of constraints to make sure that the images wouldn't shift or distort if the size of the screen chagned
+	* I made sure to apply the use of constraints to make sure that the images wouldn't shift or distort if the size of the screen changed.
 
 ![Screenshot of Dicee App](https://raw.githubusercontent.com/jaysonbourne/swift-Udemy/master/ScreenShots/diceSimulation.png)
 
